@@ -1,0 +1,164 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul {
+    font-family: 'JetBrains Mono', monospace;
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styles */
+body {
+    background-color: #dedede;
+    color: #333;
+}
+
+header {
+    background-color: black;
+    color: #27d513;
+    text-align: center;
+    padding: 20px;
+    align-items: center; /* Center vertically */
+    margin: 0 auto; /* Center horizontally */
+}
+
+h1 {
+    font-size: 64px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+.job-title {
+    font-size: 36px;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 40px rgb(7, 53, 89);
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+.job, .education-entry {
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 10px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+#timeline {
+    position: relative;
+}
+
+.timeline-entry {
+    display: flex;
+    padding-bottom: 50px;
+    margin-bottom: 0;
+    position: relative;
+}
+
+.timeline-entry-last {
+    display: flex;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    position: relative;
+}
+
+.dot {
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border-radius: 50%;
+    margin-right: 30px;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 2;
+}
+
+.timeline-entry::before {
+    content: "";
+    width: 3px;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 15px;
+    margin-left: -2px;
+    z-index: 1;
+}
+
+#profile {
+    flex-shrink: 0; /* Prevent the profile picture from shrinking */
+    margin-right: 20px; /* Add spacing between the picture and details */
+}
+
+#profile-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.circle-gradient-border {
+    display: inline-block;
+    background-image: linear-gradient(45deg, red, red, orange, yellow, green, blue, indigo, violet);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+/* CSS for print */
+@media print {
+    main {
+        box-shadow: none !important;
+    }
+
+    header {
+        color: black;
+        padding: 0;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .job-title {
+        font-size: 14px;
+    }
+
+    #profile-photo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .timeline-entry {
+        padding-bottom: 15px;
+    }
+}
