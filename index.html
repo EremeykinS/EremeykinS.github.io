@@ -20,59 +20,216 @@
 
 <main>
     <section>
-        <h2>Summary</h2>
-        <p>I'm a software engineer with strong math background and scientific experience, keen on quality assurance and
-            automation.</p>
+        <h2 class="section-header">About me</h2>
+        <p class="paragraph">
+            I am an experienced software engineer with a strong and diverse scientific background and a passion for
+            JVM-based technologies.
+            I bring over 5 years of in-depth experience in designing, developing, and deploying robust, scalable backend
+            systems.
+            My expertise spans across working with cutting-edge technologies, from fast-paced startup environments to
+            roles in stable tech companies.</p>
+        <p class="paragraph">
+            My proficiency extends beyond programming to include deploying services in a cloud Kubernetes environment,
+            and testing and monitoring.
+            I am driven by the challenge of transforming complex business requirements into high-quality, scalable
+            software solutions that deliver real value.</p>
+    </section>
+    <section>
+        <h2 class="section-header">Skills Summary</h2>
+        <div class="inline-list-container">
+            <h3>Languages:</h3>
+            <ul>
+                <li>Java 8 - 21</li>
+                <li>Kotlin</li>
+                <li>Python</li>
+                <li>SQL</li>
+            </ul>
+        </div>
+        <div class="inline-list-container">
+            <h3>Frameworks:</h3>
+            <ul>
+                <li>Spring Framework</li>
+                <li>Hibernate</li>
+                <li>JUnit</li>
+                <li>Mockito</li>
+            </ul>
+        </div>
+        <div class="inline-list-container">
+            <h3>Databases:</h3>
+            <ul>
+                <li>PostgreSQL</li>
+                <li>MongoDB</li>
+                <li>ClickHouse</li>
+                <li>Apache Cassandra</li>
+            </ul>
+        </div>
+        <div class="inline-list-container">
+            <h3>Other tools:</h3>
+            <ul>
+                <li>GraphQL</li>
+                <li>Gradle</li>
+                <li>Maven</li>
+                <li>Docker</li>
+                <li>Kubernetes</li>
+                <li>Kafka</li>
+                <li>Git</li>
+            </ul>
+        </div>
     </section>
     <section id="timeline">
-        <h2>Experience</h2>
+        <h2 class="section-header">Experience</h2>
         <div class="timeline-entry">
             <div class="dot"></div>
             <div>
-                <h3>Backend Developer</h3>
-                <p>Arrival - Tbilisi</p>
-                <p>Jul 2022 - Present</p>
+                <h3>Kotlin Backend Developer</h3>
+                <p>Arrival - Tbilisi, Georgia (Full-time, Hybrid)</p>
+                <p>Jul 2022 - Oct 2023 (1 yr 4 mos)</p>
+                <p>Arrival was a pioneering British electric vehicle (EV) startup where I contributed to three
+                    projects.</p>
                 <ol>
-                    <li> At the Website Team:
+                    <li>At the ProductHub Team:
                         <ul>
-                            <li>developed a microservice to capture leads from the website, store them in a NoSQL
-                                database, and route them to external systems (e.g., Airtable, mailing system) based on
-                                specific conditions
+                            <li>Developed microservices for ProductHub, an in-house CAD-like system for managing EV
+                                build components and optimizing costs.
+                                I led the integration of these services into the company-wide federated GraphQL
+                                architecture and was responsible for their deployment into a cloud Kubernetes cluster.
                             </li>
-                            <li>developed a conceptual microservice from scratch for migrating JSON documents between
-                                two schemas using GraalVM to run JS code inside a JVM app (curious about the story
-                                behind it? Let's discuss it during a job interview)
-                            </li>
-                            <li>maintained the geo-IP microservice to serve users with content in their language</li>
-                            <li>maintained a microservice that facilitated content translation into multiple languages
-                            </li>
-                            <li>ensured overall project quality with tools like Renovate bot and Snyk</li>
                         </ul>
                     </li>
-                    <li>Now developing an in-house tool for managers to make cost optimizations of an EV easy and
-                        convenient.
+                    <li>
+                        At the Elements Store Team:
+                        <ul>
+                            <li>
+                                Built and deployed a microservice for managing elements quotes, integrating it with
+                                various notification systems.
+                            </li>
+                        </ul>
+                    </li>
+                    <li> At the Website Team:
+                        <ul>
+                            <li>Developed a microservice to capture leads from the website, store them in a NoSQL
+                                database, and route them to external systems (e.g., Airtable, mailing system) based on
+                                specific conditions.
+                            </li>
+                            <li>Developed a conceptual microservice from scratch for migrating JSON documents between
+                                two schemas using GraalVM to run JS code inside a JVM app. Curious about the story
+                                behind it? Let's discuss it during a job interview!
+                            </li>
+                            <li>Maintained the geo-IP microservice to serve users with content in their language.</li>
+                            <li>Maintained a microservice that facilitated content translation into multiple languages.
+                            </li>
+                            <li>Ensured overall project quality with tools like Renovate bot and Snyk.</li>
+                        </ul>
                     </li>
                 </ol>
-
+            </div>
+        </div>
+        <div class="timeline-entry">
+            <div class="dot"></div>
+            <div>
+                <h3>Java Backend developer</h3>
+                <p>Headhunter Group - Moscow, Russia (Full-time, Hybrid)</p>
+                <p>Jul 2018 - Jul 2022 (4 yrs)</p>
+                <p>
+                    Headhunter runs the most popular job site in Russia, hh.ru. It hosts 1.5M vacancies, 67M resumes,
+                    serving over 3k requests per second at peak.
+                </p>
+                <p>I've contributed in multiple areas.</p>
+                <ol>
+                    <li>
+                        <strong>Developing:</strong> Led the development of the company's advertising services.
+                        Retrofitted legacy Python
+                        system to a modern distributed Spring application. Working closely with business team and ML
+                        engineers, we optimized ad delivery and targeting, managed to quadruple ads revenue.
+                    </li>
+                    <li>
+                        <strong>Testing:</strong> Authored the suite of automated end-to-end tests using Selenium,
+                        growing from zero to dozens, and implemented comprehensive unit testing with JUnit and Mockito.
+                    </li>
+                    <li>
+                        <strong>Sharing knowledge:</strong> Mentored incoming developers and QA engineers during their
+                        onboarding and later on. Actively led code reviews and refactoring, improving codebase
+                        maintainability and performance. Participated in skill-sharing sessions.
+                    </li>
+                    <li>
+                        <strong>Recruiting and enhancing company reputation:</strong> Contributed to technical
+                        interviews. Participated in a video podcast series improving the company's tech brand
+                        visibility.
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div class="timeline-entry">
+            <div class="dot"></div>
+            <div>
+                <h3>Trainee developer</h3>
+                <p>Headhunter Group - Moscow, Russia (Part-time internship, On-site)</p>
+                <p>Mar 2018 - Jun 2018 (3 mos)</p>
+                <p>
+                    Designed and developed "Hades", a web service for technical support email issue tracking, from
+                    inception to deployment.
+                    Integrated Spring Boot backend, React.js frontend and Hive data warehouse, demonstrating full-stack
+                    development skills.
+                </p>
+                <p>
+                    The project, initially a training exercise, reduced weekly email issues from 3 on average to fewer
+                    than 1, and was adopted into production to streamline support operations.
+                </p>
+            </div>
+        </div>
+        <div class="timeline-entry">
+            <div class="dot"></div>
+            <div>
+                <h3>Junior Researcher</h3>
+                <p>Mechanical Engineering Research Institute - Moscow, Russia (Part-time)</p>
+                <p>Jun 2015 - Jun 2018 (3 yrs)</p>
+                <p>
+                    Mechanical Engineering Research Institute of the Russian Academy of Sciences solves fundamental
+                    research problems in the field of machine science and engineering sciences.
+                </p>
+                <p>
+                    Some of my achievements:
+                </p>
+                <ul>
+                    <li>
+                        Developed and implemented an advanced algorithm for the control system of a vibrating machine.
+                    </li>
+                    <li>
+                        Developed, deployed and maintained the institute's conference website serving over 200
+                        attendees.
+                    </li>
+                    <li>
+                        Contributed to patents, published in international scientific journals, and presented research
+                        results at conferences globally.
+                    </li>
+                </ul>
             </div>
         </div>
         <div class="timeline-entry-last">
             <div class="dot"></div>
             <div>
-                <h2>Backend developer</h2>
-                <p>Headhunter Group - Moscow</p>
-                <p>Jul 2018 - Jul 2022</p>
+                <h3>Engineer</h3>
+                <p>Central Institute of Aviation Motors - Moscow, Russia (Part-time)</p>
+                <p>Jun 2012 - Jul 2013 (1 yr 2 mos)</p>
+                <p>
+                    Developed finite element models for strength calculations of aircraft engine parts.
+                </p>
             </div>
         </div>
     </section>
 
     <section>
-        <h2>Education</h2>
+        <h2 class="section-header">Education</h2>
         <div class="education-entry">
-            <h3>Master's degree</h3>
-            <p>Bauman Moscow State Technical University</p>
-            <p>2008 - 2014</p>
-            <p>Mechatronics, Robotics, and Automation Engineering</p>
+            <h3>Higher School of Economics</h3>
+            <p>Faculty of Economic Sciences (2014 - 2016)</p>
+            <p>Master's degree. Studied macroeconomic statistics, stochastic analysis and statistical methods for
+                analysing economic and social processes.</p>
+        </div>
+        <div class="education-entry">
+            <h3>Bauman Moscow State Technical University</h3>
+            <p>Faculty of Robotics and Integrated Automation (2008 - 2014)</p>
+            <p>Master's degree. Specialized in computer engineering analysis within mechanical engineering.</p>
         </div>
     </section>
 </main>
