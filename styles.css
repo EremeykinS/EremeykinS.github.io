@@ -87,6 +87,7 @@ li {
 
 .inline-list-container ul li {
     display: inline;
+    white-space: nowrap;
 }
 
 .inline-list-container ul li:not(:last-child)::after {
