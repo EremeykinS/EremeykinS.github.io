@@ -6,6 +6,10 @@ body, h1, h2, h3, p, ul {
 }
 
 /* Basic styles */
+html {
+    font-size: 16px; /* Base font size */
+}
+
 body {
     background-color: #dedede;
     color: #333;
@@ -15,69 +19,69 @@ header {
     background-color: black;
     color: #27d513;
     text-align: center;
-    padding: 20px;
+    padding: 1.5rem;
     align-items: center; /* Center vertically */
     margin: 0 auto; /* Center horizontally */
 }
 
 h1 {
-    font-size: 64px;
+    font-size: 4rem;
 }
 
 h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
+    font-size: 1.5rem;
+    margin-bottom: 0.625rem;
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .job-title {
-    font-size: 36px;
+    font-size: 2.25rem;
 }
 
 main {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
+    max-width: 50rem;
+    margin: 1.25rem auto;
+    padding: 1.25rem;
     background-color: #fff;
-    box-shadow: 0 0 40px rgba(37, 169, 70, 0.33);
+    box-shadow: 0 0 2.5rem rgba(37, 169, 70, 0.33);
 }
 
 section {
-    margin-bottom: 30px;
+    margin-bottom: 1.8rem;
 }
 
 .section-header {
-    border-bottom: 2px solid #000;
+    border-bottom: 0.125rem solid #000;
 }
 
 .paragraph {
-    text-indent: 20px;
+    text-indent: 1.25rem;
 }
 
 .job, .education-entry {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 ul {
     list-style-type: disc;
-    margin-left: 20px;
+    margin-left: 1.25rem;
 }
 
 li {
-    margin-bottom: 10px;
+    margin-bottom: 0.7rem;
 }
 
 .inline-list-container {
     display: flex;
-    margin-bottom: 5px;
+    margin-bottom: 0.25rem;
 }
 
 .inline-list-container h3 {
-    font-size: 16px;
-    min-width: 120px;
+    font-size: 1rem;
+    min-width: 7.5rem;
 }
 
 .inline-list-container ul {
@@ -92,7 +96,7 @@ li {
 
 .inline-list-container ul li:not(:last-child)::after {
     content: "|";
-    margin-left: 10px;
+    margin-left: 0.75rem;
 }
 
 #timeline {
@@ -101,7 +105,7 @@ li {
 
 .timeline-entry {
     display: flex;
-    padding-bottom: 50px;
+    padding-bottom: 2rem;
     margin-bottom: 0;
     position: relative;
 }
@@ -114,11 +118,11 @@ li {
 }
 
 .dot {
-    width: 30px;
-    height: 30px;
+    width: 1.8rem;
+    height: 1.8rem;
     background-color: black;
     border-radius: 50%;
-    margin-right: 30px;
+    margin-right: 1rem;
     flex-shrink: 0;
     position: relative;
     z-index: 2;
@@ -126,24 +130,22 @@ li {
 
 .timeline-entry::before {
     content: "";
-    width: 3px;
+    width: 0.2rem;
     background-color: black;
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 15px;
-    margin-left: -2px;
+    left: 0.8rem; /* (dot.width - this.width)/2 */
     z-index: 1;
 }
 
 #profile {
     flex-shrink: 0; /* Prevent the profile picture from shrinking */
-    margin-right: 20px; /* Add spacing between the picture and details */
 }
 
 #profile-photo {
-    width: 200px;
-    height: 200px;
+    width: 12.5rem;
+    height: 12.5rem;
     border-radius: 50%;
 }
 
@@ -151,7 +153,27 @@ li {
     display: inline-block;
     background-image: linear-gradient(45deg, red, red, orange, yellow, green, blue, indigo, violet);
     border-radius: 50%;
-    padding: 10px;
+    padding: 0.5rem;
+}
+
+/* CSS for mobile */
+@media only screen and (max-width: 600px) {
+    html {
+        font-size: 14px;
+    }
+    header {
+        padding: 1.25rem;
+    }
+}
+
+/* CSS for small mobile */
+@media only screen and (max-width: 320px) {
+    html {
+        font-size: 12px;
+    }
+    header {
+        padding: 1rem;
+    }
 }
 
 /* CSS for print */
@@ -166,32 +188,28 @@ li {
     }
 
     h1 {
-        font-size: 24px;
+        font-size: 1.5rem;
     }
 
     h2 {
-        font-size: 16px;
-        margin-bottom: 8px;
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
     }
 
     h3 {
-        font-size: 14px;
-    }
-
-    p {
-        font-size: 12px;
+        font-size: 0.875rem;
     }
 
     .job-title {
-        font-size: 14px;
+        font-size: 0.875rem;
     }
 
     #profile-photo {
-        width: 100px;
-        height: 100px;
+        width: 6rem;
+        height: 6rem;
     }
 
     .timeline-entry {
-        padding-bottom: 15px;
+        padding-bottom: 0.75rem;
     }
 }
